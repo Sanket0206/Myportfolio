@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Sanket</h1>
+    <p>Frontend Developer | HTML | CSS | JavaScript</p>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Simple Calculator</h3>
+      <p>A basic calculator built with HTML, CSS, and JavaScript.</p>
+      <button onclick="toggleCalc()">Try it</button>
+      <div id="calculator" style="display: none;">
+        <input id="calc-display" type="text" disabled>
+        <div class="buttons">
+          <button onclick="appendCalc('1')">1</button>
+          <button onclick="appendCalc('2')">2</button>
+          <button onclick="appendCalc('+')">+</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="clearCalc()">C</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: sanket@example.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sanket Tikhe</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
